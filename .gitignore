@@ -11,3 +11,8 @@ htmlcov/
 .coverage
 .coverage.*
 .pytest_cache/
+
+
+### IDEs ###
+# Visual Studio Code
+.vscode/*
