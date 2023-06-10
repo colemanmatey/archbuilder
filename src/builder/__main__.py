@@ -1,21 +1,9 @@
-import argparse
 
 from builder import Builder, Template
-
-
-def cli_parser():
-    parser = argparse.ArgumentParser(
-        prog="archbuilder",
-        description="Use '%(prog)s' to quickly build project structures from JSON templates"
-    )
-    parser.add_argument("project", type=str)
-    parser.add_argument("template", type=str)
-
-    return parser.parse_args()
-
+from cli import arguments
 
 def main():
-    args = cli_parser()
+    args = arguments()
 
     template = Template(args.template)
     project = Builder(args.project, template)
