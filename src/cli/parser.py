@@ -7,5 +7,6 @@ def arguments():
     )
     parser.add_argument("project", type=str)
     parser.add_argument("template", type=str)
+    parser.add_argument("-o", "--output", type=str, default="build")
 
     return parser.parse_args()

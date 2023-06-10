@@ -6,7 +6,7 @@ def main():
     args = arguments()
 
     template = Template(args.template)
-    project = Builder(args.project, template)
+    project = Builder(args.project, template, args.output)
 
     project.build()
 
