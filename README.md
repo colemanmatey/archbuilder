@@ -12,7 +12,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Archbui
     
 ## Usage
 
-1. Python script
+##### 1. By using a python script
 ```python
 # Import the following classes
 from builder.template import Template
@@ -26,7 +26,7 @@ project = Builder('sass', template)
 project.build()
 ```
 
-2. Command-line
+##### 2. By using the command-line
 Invoke archbuilder to create your project. Pass the name of the project as the first argument and the path to the json file as the second argument
 ```bash
 archbuilder sass sass.json
