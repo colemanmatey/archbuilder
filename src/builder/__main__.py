@@ -4,9 +4,12 @@ from builder import Builder, Template
 
 
 def cli_parser():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("project_name", type=str)
-    parser.add_argument("template_name", type=str)
+    parser = argparse.ArgumentParser(
+        prog="archbuilder",
+        description="Use '%(prog)s' to quickly build project structures from JSON templates"
+    )
+    parser.add_argument("project", type=str)
+    parser.add_argument("template", type=str)
 
     return parser.parse_args()
 
