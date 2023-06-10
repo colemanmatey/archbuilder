@@ -7,8 +7,11 @@ name = "pypi"
 
 [dev-packages]
 black = "*"
-pytest = "*"
+flake8 = "*"
+mypy = "*"
 coverage = "*"
+pytest = "*"
+tox = "*"
 
 [requires]
 python_version = "3.11"
