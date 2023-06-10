@@ -1,7 +1,6 @@
 import sys
 
-from builder.template import Template
-from builder.builder import Builder
+from builder import Builder, Template
 
 
 def main():

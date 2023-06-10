@@ -1,7 +1,7 @@
 """
 """
 import pytest
-from builder.builder import Builder
+from builder import Builder
 
 
 def test_builder_initialization():
