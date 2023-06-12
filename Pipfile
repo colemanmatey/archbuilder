@@ -7,9 +7,10 @@ name = "pypi"
 
 [dev-packages]
 black = "*"
-flake8 = "*"
-mypy = "*"
 coverage = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
 pytest = "*"
 tox = "*"
 

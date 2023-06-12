@@ -1,6 +1,6 @@
-
 from builder import Builder, Template
 from cli import arguments
+
 
 def main():
     args = arguments()
