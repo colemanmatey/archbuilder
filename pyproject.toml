@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "archbuilder"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     {name = "Coleman A. Matey", email = "colemanmatey@icloud.com"},
 ]
-description = "A tool to enable developers set up projects quickly"
+description = "A tool to enable developers set up their projects quickly"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -16,4 +16,4 @@ classifiers = [
 ]
 
 [project.scripts]
-archbuilder = "builder.__main__:main"
+archbuilder = "archbuilder.__main__:main"

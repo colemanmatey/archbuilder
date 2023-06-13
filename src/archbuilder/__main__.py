@@ -1,7 +1,11 @@
 import argparse
+from pathlib import Path
+
+from builder import Builder
+from template import Template
 
 
-def arguments():
+def get_args():
     parser = argparse.ArgumentParser(
         prog="archbuilder",
         description="Use '%(prog)s' to quickly build project structures from JSON templates",
@@ -11,3 +15,15 @@ def arguments():
     parser.add_argument("-o", "--output", type=str, default="build")
 
     return parser.parse_args()
+
+
+def main():
+    args = get_args()
+
+    template = Template(args.template)
+    project = Builder(args.project, template, args.output)
+    project.build()
+
+
+if __name__ == "__main__":
+    main()

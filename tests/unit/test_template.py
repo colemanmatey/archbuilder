@@ -3,7 +3,7 @@
 
 import pytest
 
-from builder import Template
+from template import Template
 
 
 def test_template_initialization():

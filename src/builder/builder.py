@@ -1,19 +1,17 @@
 """
 """
-
 from pathlib import Path
 
 
 class Builder:
     """"""
 
-    root = Path(__file__).resolve().parent.parent.parent
-
-    def __init__(self, project, template, output="build"):
+    def __init__(self, project, template, output="build", root=Path.cwd()):
         """"""
         self.project = project
-        self.output = output
         self.template = template
+        self.output = output
+        self.root = root
 
     def build(self):
         """"""
