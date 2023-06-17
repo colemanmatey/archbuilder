@@ -1,6 +1,6 @@
 # This workflow will upload the Python Package to PyPI using Twine when a release is created
 
-name: Publish To PyPI
+name: Deploy to PyPI
 run-name: Upload release to PyPI
 
 on:
@@ -8,7 +8,7 @@ on:
     types: [published]
 
 jobs:
-  pypi-publish:
+  pypi-publish:        
     name: Upload release to PyPI
     runs-on: ubuntu-latest
 

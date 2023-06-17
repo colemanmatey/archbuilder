@@ -1,7 +1,7 @@
 
 # Archbuilder
 
-![Tests](https://github.com/colemanmatey/archbuilder/blob/develop/.github/workflows/tox-run.yml/badge.svg)
+[![Run tests](https://github.com/colemanmatey/archbuilder/actions/workflows/tox-run.yml/badge.svg?branch=develop)](https://github.com/colemanmatey/archbuilder/actions/workflows/tox-run.yml) [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 Archbuilder is a tool that aims to speed up the setting up of projects by creating the project directories and files from user-defined templates.
 
@@ -43,6 +43,9 @@ For major changes, please open an issue first
 to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+Copyright (c) 2023 - Coleman Asare Matey

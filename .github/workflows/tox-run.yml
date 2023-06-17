@@ -1,7 +1,7 @@
-# This workflow will run tests on pull requests
+# This workflow will run tests on push and pull request
 
-name: Run all tests
-run-name: Running tests with tox
+name: Run Tests
+run-name: Running tests
 
 on: 
   push:
@@ -19,13 +19,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10', '3.11']
     
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set up Python ${{ matrix.python-version}}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version}}
