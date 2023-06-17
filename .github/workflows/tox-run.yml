@@ -3,9 +3,11 @@
 name: Test the package
 run-name: Running tests
 
-on:
-  - pull_request
-  - push
+on: 
+  pull_request:
+    branches:
+      - main
+      - develop
 
 jobs:
   run-tests:
