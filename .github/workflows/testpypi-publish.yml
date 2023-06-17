@@ -1,6 +1,6 @@
 # This workflow will upload the Python Package to TestPyPI using Twine when a push is made to "develop"
 
-name: Upload Package To TestPyPI
+name: Publish to TestPyPI
 run-name: Uploading package to TestPyPI
 
 on:

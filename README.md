@@ -1,7 +1,10 @@
 
 # Archbuilder
 
+![Tests](https://github.com/colemanmatey/archbuilder/blob/develop/.github/workflows/tox-run.yml/badge.svg)
+
 Archbuilder is a tool that aims to speed up the setting up of projects by creating the project directories and files from user-defined templates.
+
 
 ## Installation
 
